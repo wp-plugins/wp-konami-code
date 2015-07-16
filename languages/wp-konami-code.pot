@@ -1,0 +1,106 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Konami Code\n"
+"POT-Creation-Date: 2015-07-13 16:25+0100\n"
+"PO-Revision-Date: 2015-07-13 16:25+0100\n"
+"Last-Translator: \n"
+"Language-Team: Yslo\n"
+"Language: EN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../wp-konami-code.php:114 ../wp-konami-code.php:115
+#: ../wp-konami-code.php:141
+msgid "Konami Code"
+msgstr ""
+
+#: ../wp-konami-code.php:129
+msgid "Settings"
+msgstr ""
+
+#: ../wp-konami-code.php:157
+msgid "History"
+msgstr ""
+
+#: ../wp-konami-code.php:164
+msgid "Activate Konami Code (check to enable)"
+msgstr ""
+
+#: ../wp-konami-code.php:171
+msgid ""
+"<a href=\"edit.php?post_type=page\" target=\"_blank\">Page</a> to display "
+"after running the Konami Code"
+msgstr ""
+
+#: ../wp-konami-code.php:177
+msgid "Search Engine Visibility"
+msgstr ""
+
+#: ../wp-konami-code.php:184
+msgid "Internal Search Engine Visibility"
+msgstr ""
+
+#: ../wp-konami-code.php:190
+msgid ""
+"Use URL to display after running the Konami Code instead of Page (check to "
+"enable)"
+msgstr ""
+
+#: ../wp-konami-code.php:196
+msgid "Target URL"
+msgstr ""
+
+#: ../wp-konami-code.php:203
+msgid ""
+"<p>The Konami Code is a cheat code that appears in many Konami video games, "
+"although the code also appears in some non-Konami games.</p>"
+msgstr ""
+
+#: ../wp-konami-code.php:204
+msgid ""
+"<p>During the title screen before the game demo begins, the player could "
+"press the following sequence of buttons on the game controller to enable the "
+"cheat:</p>"
+msgstr ""
+
+#: ../wp-konami-code.php:206
+msgid ""
+"<p>Mobile variation : Up, Up, Down, Down, Left, Right, Left, Right, Tap, "
+"Tap</p>"
+msgstr ""
+
+#: ../wp-konami-code.php:207
+msgid ""
+"<p>The code has also found a place in popular culture as a reference to the "
+"third generation of video game consoles. The code is also present as an "
+"Easter egg on a number of websites (yours now, :-).</p>"
+msgstr ""
+
+#: ../wp-konami-code.php:208
+msgid ""
+"<a href=\"https://en.wikipedia.org/wiki/Konami_Code\" target=\"_blank\">See "
+"more on Wikipedia</a>"
+msgstr ""
+
+#: ../wp-konami-code.php:249
+msgid ""
+"Discourage search engines from indexing this Konami Code <a href=\"edit.php?"
+"post_type=page\" target=\"_blank\">page</a>."
+msgstr ""
+
+#: ../wp-konami-code.php:252
+msgid "It is up to search engines to honor this request."
+msgstr ""
+
+#: ../wp-konami-code.php:262
+msgid ""
+"Exclude this Konami Code <a href=\"edit.php?post_type=page\" target=\"_blank"
+"\">page</a> of internal search engine."
+msgstr ""
