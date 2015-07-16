@@ -12,12 +12,13 @@ Add Konami code easter egg to your WordPress website.
 
 == Description ==
 
-Add Konami Code to WordPress website and display a special page on Konami Code execution. Availble on desktop and mobile.
+Add Konami Code to WordPress website and display a special page on Konami Code execution. Available on desktop and mobile.
 
 The Konami Code is a cheat code that appears in many Konami video games, although the code also appears in some non-Konami games.
 
 During the title screen before the game demo begins, the player could press the following sequence of buttons on the game controller to enable the cheat:
 Up, Up, Down, Down, Left, Right, Left, Right, B, A
+
 Mobile variation : Up, Up, Down, Down, Left, Right, Left, Right, Tap, Tap
 
 The code has also found a place in popular culture as a reference to the third generation of video game consoles. The code is also present as an Easter egg on a number of websites (yours now, :-).
