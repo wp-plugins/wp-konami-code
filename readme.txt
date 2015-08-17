@@ -4,7 +4,7 @@ Tags: konami, code, konami code, easter egg, contra, gradius
 Requires at least: 3.0
 
 Tested up to: 4.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,6 +60,9 @@ You will find 'Konami Code' menu in your WordPress Settings panel.
 3. Konami Code Settings panel
 
 == Changelog ==
+
+= 1.0.1 =
+* Fix : checkbox bug
 
 = 1.0.0 =
 * Initial version

@@ -4,7 +4,7 @@
  * Plugin URI: http://wordpress.org/plugins/wp-konami-code/
  * Description: Add Konami Code to WordPress website and display a special page on Konami Code execution. Availble on desktop and mobile.
  * Author: Yslo
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author URI: http://profiles.wordpress.org/yslo/
  * Tested up to: 4.2
  * License: GPLv2 or later
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) exit; // Exit if accessed directly
 class WP_Konami_Code
 {
 	// Define version
-	const VERSION = '1.0.0';
+	const VERSION = '1.0.1';
 	
 	var $wp_konami_code_options;
 
@@ -126,7 +126,7 @@ class WP_Konami_Code
 		if (!$this_plugin) $this_plugin = plugin_basename(__FILE__);
 
 		if ($file == $this_plugin){
-			$settings_link = '<a href="options-general.php?page=' . $this_plugin . '">' . __('Settings', 'wp-login-timeout-settings') . '</a>';
+			$settings_link = '<a href="options-general.php?page=' . $this_plugin . '">' . __('Settings', 'wp-konami-code') . '</a>';
 			array_unshift($links, $settings_link);
 		}
 
@@ -138,7 +138,7 @@ class WP_Konami_Code
 		?>
 		<div class="wrap">
 		<?php screen_icon(); ?>
-		<h2><?php _e('Konami Code', 'wp-konami-code-settings'); ?></h2>
+		<h2><?php _e('Konami Code', 'wp-konami-code'); ?></h2>
 		<form action="options.php" method="post">
 		<?php settings_fields('wp_konami_code_options'); ?>
 		<?php do_settings_sections('wp_konami_code_options_sections'); ?>
@@ -262,15 +262,15 @@ class WP_Konami_Code
 	function wp_konami_code_options($input)	{
 		$valid = array();
 
-		$valid['activated'] = filter_var($input['activated'], FILTER_VALIDATE_BOOLEAN) ? $input['activated'] : 0;
+		$valid['activated'] = (isset($input['activated']) && filter_var($input['activated'], FILTER_VALIDATE_BOOLEAN)) ? $input['activated'] : 0;
 
-		$valid['page'] = filter_var($input['page'], FILTER_VALIDATE_INT) ? $input['page'] : 0;
+		$valid['page'] = (isset($input['page']) && filter_var($input['page'], FILTER_VALIDATE_INT)) ? $input['page'] : 0;
 
-		$valid['visibility_search_engine'] = filter_var($input['visibility_search_engine'], FILTER_VALIDATE_BOOLEAN) ? $input['visibility_search_engine'] : 1;
+		$valid['visibility_search_engine'] = (isset($input['visibility_search_engine']) && filter_var($input['visibility_search_engine'], FILTER_VALIDATE_BOOLEAN)) ? $input['visibility_search_engine'] : 0;
 
-		$valid['visibility_internal_search_engine'] = filter_var($input['visibility_internal_search_engine'], FILTER_VALIDATE_BOOLEAN) ? $input['visibility_internal_search_engine'] : 1;
+		$valid['visibility_internal_search_engine'] = (isset($input['visibility_internal_search_engine']) && filter_var($input['visibility_internal_search_engine'], FILTER_VALIDATE_BOOLEAN)) ? $input['visibility_internal_search_engine'] : 0;
 
-		$valid['url_redirect_activated'] = filter_var($input['url_redirect_activated'], FILTER_VALIDATE_BOOLEAN) ? $input['url_redirect_activated'] : 0;
+		$valid['url_redirect_activated'] = (isset($input['url_redirect_activated']) && filter_var($input['url_redirect_activated'], FILTER_VALIDATE_BOOLEAN)) ? $input['url_redirect_activated'] : 0;
 
 		if(filter_var($input['url_redirect'], FILTER_VALIDATE_URL)) {
 			$valid['url_redirect'] = $input['url_redirect'];
